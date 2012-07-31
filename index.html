@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>Assignment 4 (API Instagram)</title>
+
+	<meta charset="UTF-8" />
+	<meta name="author" content="Sebastien Fanals">
+
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css" media="screen" />
+	<link rel="stylesheet" type="text/css" href="css/liquidcarousel.css" media="screen" />
+	<link rel="stylesheet" type="text/css" href="css/jquery.lightbox-0.5.css" media="screen" />
+	<link rel="stylesheet" type="text/css" href="css/style.css" media="screen" />
+
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<script type="text/javascript" src="js/jquery.lightbox-0.5.js"></script>
+	<script type="text/javascript" src="js/jquery.liquidcarousel.pack.js"></script>
+	<script type="text/javascript" src="js/functions.js"></script>
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="span3">
+				<img src="img/london2012_logo.png" alt="logo london 2012" />
+			</div>
+			<div class="span2">
+				<h2>Tags</h2>
+				<ul class="unstyled">
+					<li><a class="btn btn-custom" href="tag_olympics">Olympics</a></li>
+					<li><a class="btn btn-inverse" href="tag_london2012">London 2012</a></li>
+					<li><a class="btn btn-inverse" href="tag_olympictorch">Olympic Torch</a></li>
+				</ul>
+			</div>
+			<div class="span2">
+				<h2>Events</h2>
+				<ul class="unstyled">
+					<li><a class="btn btn-inverse" href="tag_olympicbmx">BMX</a></li>
+					<li><a class="btn btn-inverse" href="tag_athletics">Athletics</a></li>
+					<li><a class="btn btn-inverse" href="tag_swimming">Swimming</a></li>
+				</ul>
+			</div>
+			<div class="span2">
+				<h2>Athletes</h2>
+				<ul class="unstyled">
+					<li><a class="btn btn-inverse" href="user_kingjames">LeBron James</a></li>
+					<li><a class="btn btn-inverse" href="user_m_phelps00">Michael Phelps</a></li>
+					<li><a class="btn btn-inverse" href="user_aleveaux">Amaury Leveaux</a></li>
+				</ul>
+			</div>
+			<div class="span2">
+				<h2>Others</h2>
+				<ul class="unstyled">
+					<li><a class="btn btn-inverse" href="tag_teamfrance">Team France #FRA</a></li>
+					<!-- Lat/long of the olympics village: latitude: 51.54615 longitude: -0.01269 -->
+					<li><a class="btn btn-inverse" href="geotag_51.54615_-0.01269">Geotagged in Olympics village</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="row">
+			<div class="span12 center">
+				<h1 id="carousel_title">Olympics</h1>
+				<img id="loading_icon" src="img/load.gif" alt="loading icon" />
+			</div>
+		</div>		
+		<div id="liquid">
+			<span class="previous"></span>
+			<div class="wrapper">
+				<ul>
+					
+				</ul>
+			</div>
+			<span class="next"></span>
+		</div>
+	</div>
+	<div id="footer">
+		<a href="http://validator.w3.org/check?uri=http%3A%2F%2Fpeople.ischool.berkeley.edu%2F~i155-001%2Fi153%2Fa4%2F">
+			<table id="html_validator">
+				<tr><td><img src="img/HTML5.png" alt="html5 validator icon" /></td><td>Validate by clicking here</td></tr>
+			</table>
+		</a>
+	</div>
+</body>
+</html>
